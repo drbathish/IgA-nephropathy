@@ -65,6 +65,11 @@ Populate `outputs/evidence-table.md`. Structure:
 |---|---|---|---|---|---|---|---|---|---|---|
 | Author et al. | YYYY | ... | ... | ... | ... | ... | ... | ... | ... | sources/papers/<file>.md |
 
+## Background/Context Sources (not primary evidence)
+
+| Study (short cite) | Year | Journal | Focus | Note | Source Record |
+|---|---|---|---|---|---|
+
 ## Excluded Candidates
 
 | Study (short cite) | Year | Reason for exclusion (criterion cited) | Source Record |
@@ -72,6 +77,10 @@ Populate `outputs/evidence-table.md`. Structure:
 ```
 
 Every row in "Included Studies" must link to a `sources/papers/*.md` file with `Verification status: verified`. Never add a row for a study that has no corresponding source record — if you identify a gap in coverage while reviewing (e.g., you notice the included set is missing an important angle), report that to the orchestrator as a request for more `literature-scout` intake; do not describe or cite a study you have not received a verified record for, even briefly.
+
+**"Background/Context Sources" is for records that pass all inclusion/exclusion criteria but sit at a study-type tier `research-question.md` restricts to background/context use only (e.g., narrative reviews at tier 8) — they are neither "included" as evidence nor "excluded." Give the source record's screening decision as `Include – background/context only (not a primary evidence-table entry)`, with the reason naming the tier and rule. `research-writer` may use these for framing/orientation but must never cite one as the evidentiary basis for a specific quantitative or study-level claim — that requires an Included Studies row.
+
+**Splitting one paper across multiple rows:** when a single study reports on both IgAN and IgAV populations (or otherwise spans a topic-specific constraint requiring separate reporting per `research-question.md`), give each disease/population its own row, each independently classified on the study-type ladder (a subgroup's sample size can place it on a different tier than the paper's overall n). If the paper's text does not report disease-stratified results separately, say so explicitly in Key Outcomes/Findings for each row rather than attributing the pooled-cohort result to one subgroup — do not split the numbers yourself.
 
 ## Handoff
 
