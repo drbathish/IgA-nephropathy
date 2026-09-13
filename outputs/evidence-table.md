@@ -19,12 +19,12 @@
 
 > Per `research-question.md`'s study-type ladder, narrative reviews (tier 8) are "usable for background/context only, never as a primary evidence source in the evidence table." These 4 records meet all inclusion criteria and are not excluded, but are deliberately kept out of the Included Studies table above. `research-writer` may use them for background/context framing but must not cite them as the evidentiary basis for a specific quantitative claim.
 
-| Study (short cite) | Year | Journal | Focus | Note | Source Record |
-|---|---|---|---|---|---|
-| Cheung et al. 2024 | 2024 | Nature Reviews Nephrology | IgAN pathogenesis and emerging treatment landscape | General mechanistic/therapeutic-landscape background for IgAN | [sources/papers/10.1038-s41581-024-00885-3.md](../sources/papers/10.1038-s41581-024-00885-3.md) |
-| Stamellou et al. 2023 | 2023 | Nature Reviews Disease Primers | Comprehensive IgAN disease primer (epidemiology, pathophysiology, diagnosis, management) | General background/orientation to IgAN as a disease entity | [sources/papers/10.1038-s41572-023-00476-9.md](../sources/papers/10.1038-s41572-023-00476-9.md) |
-| Barratt et al. 2023 | 2023 | Kidney International | Lectin-pathway complement activation in IgAN | Mechanistic background specific to complement/lectin-pathway targeting | [sources/papers/10.1016-j.kint.2023.04.029.md](../sources/papers/10.1016-j.kint.2023.04.029.md) |
-| Castañeda et al. 2024 | 2024 | Journal of Clinical Medicine | IgAV treatment update | **Extrapolation flag:** discusses applying IgAN-derived therapies (TRF-budesonide, complement inhibitors) to IgAV. Per `research-question.md`, if `research-writer` draws on this, it must be labeled indirect (IgAN-derived) evidence, not IgAV-specific evidence. | [sources/papers/10.3390-jcm13216621.md](../sources/papers/10.3390-jcm13216621.md) |
+| Study (short cite) | Year | Journal | Focus | Note | DOI / PMID | Source Record |
+|---|---|---|---|---|---|---|
+| Cheung et al. 2024 | 2024 | Nature Reviews Nephrology | IgAN pathogenesis and emerging treatment landscape | General mechanistic/therapeutic-landscape background for IgAN | 10.1038/s41581-024-00885-3 / PMID 39232245 | [sources/papers/10.1038-s41581-024-00885-3.md](../sources/papers/10.1038-s41581-024-00885-3.md) |
+| Stamellou et al. 2023 | 2023 | Nature Reviews Disease Primers | Comprehensive IgAN disease primer (epidemiology, pathophysiology, diagnosis, management) | General background/orientation to IgAN as a disease entity | 10.1038/s41572-023-00476-9 / PMID 38036542 | [sources/papers/10.1038-s41572-023-00476-9.md](../sources/papers/10.1038-s41572-023-00476-9.md) |
+| Barratt et al. 2023 | 2023 | Kidney International | Lectin-pathway complement activation in IgAN | Mechanistic background specific to complement/lectin-pathway targeting | 10.1016/j.kint.2023.04.029 / PMID 37263354 | [sources/papers/10.1016-j.kint.2023.04.029.md](../sources/papers/10.1016-j.kint.2023.04.029.md) |
+| Castañeda et al. 2024 | 2024 | Journal of Clinical Medicine | IgAV treatment update | **Extrapolation flag:** discusses applying IgAN-derived therapies (TRF-budesonide, complement inhibitors) to IgAV. Per `research-question.md`, if `research-writer` draws on this, it must be labeled indirect (IgAN-derived) evidence, not IgAV-specific evidence. | 10.3390/jcm13216621 / PMID 39518760 | [sources/papers/10.3390-jcm13216621.md](../sources/papers/10.3390-jcm13216621.md) |
 
 ## Excluded Candidates
 
