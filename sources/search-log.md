@@ -187,3 +187,25 @@ Scope: research-question.md now exists (created 2026-09-13). This batch systemat
 - **IgAV diagnostics/clinical phenotypes:** well covered — the Barbour MEST-C validation study, Levanon comparative study, Maisons clustering study, and Vivarelli guideline collectively give this sub-topic good depth for a first production pass.
 
 **Overall:** No sub-topic was searched to a full literal 3-consecutive-no-new-candidate saturation except avacopan (which did reach saturation with a confirmed gap). All other sub-topics were stopped at a bounded, well-populated sample per research-question.md's explicit non-exhaustive-retrieval guidance, given the very large size of this literature — not because new candidates stopped appearing.
+
+---
+
+## Run 19 — Targeted verification follow-up (not a new discovery search)
+
+- **Date:** 2026-09-13
+- **Purpose:** Orchestrator-requested follow-up on a specific verification gap flagged during evidence-reviewer's screening of sources/papers/10.1016-j.ejim.2026.106742.md (Maisons et al. 2026, EJIM, adult-onset IgAV clustering study). Goal: determine the substantive content of the associated corrigendum (PMID 42457434, DOI 10.1016/j.ejim.2026.107059) that could not be resolved at initial intake (abstract field empty). This is a bibliographic-verification follow-up on an already-recorded candidate, not a new literature search — no new candidate papers were sought or in scope.
+- **Lookups/tools used, in order:**
+  1. `mcp__PubMed__get_article_metadata` on PMIDs ["42457434","41644397"] — confirmed corrigendum's article type ("Published Erratum"), journal/volume/pages (Eur J Intern Med 151:107059), full author list match, pub date 2026-07-16; abstract field still empty.
+  2. `mcp__PubMed__convert_article_ids` on PMID 42457434 (id_type=pmid) — no PMCID returned (no PMC full text exists for this item).
+  3. `WebFetch` on `https://doi.org/10.1016/j.ejim.2026.107059` — 302 redirect to `https://linkinghub.elsevier.com/retrieve/pii/S095362052600364X`, redirect stub only, no article content.
+  4. `WebFetch` on `https://linkinghub.elsevier.com/retrieve/pii/S095362052600364X` — same redirect-stub result, no content.
+  5. `WebFetch` on `https://www.sciencedirect.com/science/article/pii/S095362052600364X` and on the `/pdf` variant of that URL — both HTTP 403 Forbidden.
+  6. `WebFetch` on `https://api.crossref.org/works/10.1016/j.ejim.2026.107059` — confirmed Erratum/"update-to" relation to the original article's DOI, CC-BY license flag, zero references, no abstract field.
+  7. `WebFetch` on `https://api.unpaywall.org/v2/10.1016/j.ejim.2026.107059` — reports is_oa=true/CC-BY but no direct PDF URL; best OA location is the same DOI landing page (which 403s on direct fetch).
+  8. `WebFetch` on the EuropePMC REST API search for this DOI — metadata only, explicitly states "subscription required" for full text, no abstract.
+  9. `WebSearch` with multiple reformulated queries combining the DOI/PMID/title with "corrigendum," "erratum," "we regret," "should read," "incorrectly," "correction" — no indexed snippet anywhere contains the corrigendum's actual corrected text.
+  10. `WebFetch` on the EFIM (European Federation of Internal Medicine) reprint/summary page for the original article — makes no mention of any correction.
+- **Filters applied:** none (targeted identifier/DOI lookups, not a filtered discovery search).
+- **Results returned:** Corrigendum's *existence*, formal linkage to the original article, and bibliographic metadata were confirmed across all sources consulted. Its *substantive content* (what specific error/figure/number was corrected) was NOT obtainable through any tool available to literature-scout — every full-text access path was either paywalled (403), redirect-stub-only, or metadata-only with no abstract.
+- **New candidates recorded:** 0 (this was a verification follow-up on an existing record, not a discovery search).
+- **Outcome:** Updated the verification notes in `sources/papers/10.1016-j.ejim.2026.106742.md` with a dated addendum documenting this full attempt and its failure to access the corrigendum's content, per the anti-fabrication rule (state the access failure explicitly rather than guess). The existing caveat in `outputs/evidence-table.md` (row 40) and `outputs/research-report.md` that the cluster findings have not been checked against the corrigendum remains unresolved and is escalated back to the orchestrator/evidence-reviewer for a decision on how to treat this source going forward (e.g., retain with caveat, downgrade, or seek institutional access) — this is a recommendation, not a decision made here.
