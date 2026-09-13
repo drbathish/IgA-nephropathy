@@ -1,0 +1,15 @@
+- Title: Patient-Reported Outcomes in the PROTECT Clinical Trial Comparing Sparsentan with Irbesartan for IgA Nephropathy (as titled by Consensus)
+- Authors: S. Wadhwani et al. (full list not independently confirmed)
+- Journal: Journal of the American Society of Nephrology (as reported by Consensus)
+- Year: 2024 (as reported by Consensus)
+- DOI: not found
+- PMID (or other identifier): not found
+- Source URL: not found (Consensus-provided URL is a Consensus.app mirror page, not a primary bibliographic source)
+- Discovery source(s): Consensus only; PubMed verification attempted and failed
+- Verification status: unverified
+- Verification notes: Two independent PubMed searches (title-based, and author+topic-based "Wadhwani KDQOL-36 IgA nephropathy sparsentan quality of life") both returned zero results. This pattern (JASN-branded result, 1 citation per Consensus, no PubMed record) is consistent with an ASN Kidney Week conference abstract rather than a full-text peer-reviewed journal article. Per research-question.md exclusion criteria, conference abstracts without an associated full-text peer-reviewed publication are excluded; per literature-scout's own rules, this candidate is logged here rather than silently dropped.
+- Preprint: no (not applicable — appears to be a conference abstract, not a preprint)
+- Coarse scope check: cannot be completed reliably given unresolved identity; topic (PROTECT trial patient-reported outcomes) would be in-scope if a full-text peer-reviewed publication is later identified
+- Date added: 2026-09-13
+- Study type: presumed conference abstract (unconfirmed)
+- Notes: Do NOT pass forward to evidence-reviewer. If a full-text peer-reviewed version of this PROTECT patient-reported-outcomes analysis is published later, re-search and create a proper verified record at that time.
