@@ -107,9 +107,50 @@ Scope: research-question.md now exists (created 2026-09-13). This batch systemat
 ## Run 10
 
 - **Date:** 2026-09-13
-- **Query:** "iptacopan avacopan narsoplimab complement inhibitor IgA nephropathy clinical trial"
+- **Query:** "iptacopan IgA nephropathy APPLAUSE randomized controlled trial complement factor B" and "narsoplimab MASP-2 inhibitor IgA nephropathy trial" and "telitacicept atacicept blisibimod BAFF APRIL inhibitor IgA nephropathy clinical trial" (3 parallel queries)
 - **Tool/database:** Consensus (primary)
 - **Filters:** year_min=2022, exclude_preprints=true, medical_mode=true
-- **Results returned:** rate-limited on first attempt; re-run pending
-- **New candidates recorded:** pending re-run
-- **Notes:** Consensus rate limit hit; re-queried in the next batch.
+- **Results returned:** 10 each (30 total)
+- **New candidates recorded:** 8 verified (APPLAUSE-IgAN interim [Perkovic 2024 NEJM]; APPLAUSE-IgAN final 24-month [Barratt 2026 NEJM]; iptacopan phase 2 [Zhang 2023 KI]; APPLAUSE-IgAN design/protocol [Rizk 2023 KI Reports, lower-weight protocol-only record]; sibeprenlimab phase 2 ENVISION [Mathur 2023 NEJM]; atacicept ORIGIN phase 2b [Lafayette 2024 KI]; cemdisiran phase 2 [Barratt 2024 CJASN]; IgAV narrative review of novel nephritis drug treatments [Williams et al. 2023 Clin Rheumatol, background-context only])
+- **Notes:** MAJOR FINDING — this cluster surfaced a third and fourth placebo-controlled phase 3/pivotal-track IgAN RCT (iptacopan/APPLAUSE-IgAN interim + final), plus phase 2 RCTs for atacicept (a specifically named drug in research-question.md), sibeprenlimab (closely related APRIL-targeted mAb, flagged for evidence-reviewer to confirm in-scope status against the exact named-drug list), and cemdisiran (a complement C5 inhibitor, distinct mechanism from the three named complement drugs but within the general "complement pathway inhibitors" scope category). No narsoplimab RCT results were found — all narsoplimab hits were single-patient case reports/conference abstracts (see below) or a trial-design-only ERA-EDTA abstract (ARTEMIS-IgAN, POS-132); the pivotal narsoplimab phase 3 trial appears to have reported a non-significant primary endpoint per a citing commentary (Zhu et al. 2025 JASN letter, not independently verified as a primary source and not recorded) but no full-text primary publication of that result was found in this search — flagged as an evidence gap for narsoplimab specifically, not resolved by assumption. Several conference-abstract-only candidates excluded: iptacopan interim analysis abstracts (#456, WCN24-1506, WCN25-726 complement biomarkers, Rizk 2024 JASN low-eGFR subcohort), narsoplimab pediatric case report (Oni 2022 JASN abstract) and adult recurrent-IgAN case report (Storrar 2022 JASN abstract) — both potentially illustrative of a "genuinely novel/emerging intervention" per the tier-7 carve-out, but no full-text peer-reviewed publication was identified, so not recorded as source files per the conference-abstract exclusion criterion (noted here for audit-trail transparency). Also excluded: a systematic-review protocol (Ma et al. 2024 PLOS ONE, biologic agents in IgAN) with no results yet reported (not evidence-bearing), and a JASN letter/commentary on complement inhibition (Zhu et al. 2025) with no original data (background-only if used at all, not recorded as this session's focus was primary evidence). One off-topic false-positive (Wani et al., NELL1-associated membranous nephropathy — not IgAN/IgAV) excluded as out-of-scope.
+- **Correction note:** A source record was initially filed for the Williams et al. 2023 Clin Rheumatol narrative review under an incorrectly-guessed DOI filename (10.1007-s10067-023-06764-9.md). The correct DOI (10.1007/s10067-023-06781-8) was confirmed via a follow-up PubMed metadata fetch in the same session; the original stub file was overwritten with a pointer to the corrected record (10.1007-s10067-023-06781-8.md) rather than deleted, per the project's audit-trail preservation rule.
+
+## Runs 11-13 — avacopan sub-topic (SATURATED, evidence gap identified)
+
+- **Date:** 2026-09-13
+- **Queries:** "avacopan IgA nephropathy IgA vasculitis treatment"; "avacopan complement C5a receptor antagonist IgA nephropathy trial glomerular disease"; "avacopan IgA vasculitis nephritis case report compassionate use"
+- **Tool/database:** Consensus (primary)
+- **Filters:** year_min=2022, exclude_preprints=true, medical_mode=true
+- **Results returned:** 10 each (30 total)
+- **New candidates recorded:** 0
+- **Notes:** SATURATION REACHED (3 consecutive reformulated queries, zero new in-scope candidates) per research-question.md's stopping rule. All 30 hits across three query reformulations were for ANCA-associated vasculitis (a distinct disease from IgAV) or C3 glomerulopathy (a distinct disease from IgAN) — none were IgAN- or IgAV-specific avacopan studies (aside from duplicate hits of already-recorded iptacopan/cemdisiran trials and the Williams review, which mentions avacopan only as a theoretical extrapolation candidate, not as tested). CONCLUSION: this appears to be a genuine, real evidence gap — avacopan (unlike iptacopan and narsoplimab) does not yet have a dedicated IgAN or IgAV clinical trial in the literature as of this search date. Flagging explicitly for research-writer/evidence-reviewer as an evidence gap rather than omitting silently.
+
+## Run 14
+
+- **Date:** 2026-09-13
+- **Query:** "rituximab IgA nephropathy randomized controlled trial proteinuria" and "rituximab IgA vasculitis nephritis children treatment outcomes" (2 parallel queries; second rate-limited, not yet re-run)
+- **Tool/database:** Consensus (primary)
+- **Filters:** year_min=2022, exclude_preprints=true, medical_mode=true
+- **Results returned:** 10 (first query only)
+- **New candidates recorded:** 3 verified (telitacicept phase 2 RCT [Lv 2022 KI Reports]; atacicept JANUS phase II RCT [Barratt 2022 KI Reports]; ravulizumab phase 2 RCT [Lafayette 2024/2025 JASN])
+- **Notes:** No rituximab-specific RCT for IgAN found (rituximab literature for IgAN/glomerular disease in this search was for relapsing nephrotic syndrome [Isaka 2025 JAMA — NOT IgAN-specific, excluded as off-topic] and a small uncontrolled case series [Sun et al., JASN conference abstract, n=8, IgAN with podocytopathy — excluded, no full-text publication identified]). One highly relevant conference-abstract-only finding — Trivioli et al., "Rituximab in adult-onset IgA vasculitis" (NDT abstract #3108, n=61 IgAV + n=15 crescentic IgAN, multicentre European cohort, 85% remission at 6 months) — could not be matched to any full-text peer-reviewed publication via a dedicated PubMed search (0 results); not recorded as a source file per the conference-abstract exclusion criterion, logged here for audit-trail transparency since it is the most substantial rituximab-in-IgAV dataset found this session. Second query (rituximab in pediatric IgAV nephritis) was rate-limited by Consensus and re-queried in Run 15.
+
+## Run 15
+
+- **Date:** 2026-09-13
+- **Query:** "rituximab IgA vasculitis nephritis children treatment outcomes" (re-run)
+- **Tool/database:** Consensus (primary)
+- **Filters:** year_min=2022, exclude_preprints=true, medical_mode=true
+- **Results returned:** 10
+- **New candidates recorded:** 1 (Rohner et al. 2024 NDT — large multinational retrospective cohort, n=1148 children with biopsy-proven IgAVN, immunosuppression outcomes)
+- **Notes:** MAJOR FINDING for the treatment/therapeutics and diagnostics/phenotype sub-topics — the largest pediatric IgAVN cohort found this session (41 centres, 25 countries), with a notable null finding (no second-line immunosuppressive regimen shown superior to others) that is itself an important evidence gap to represent in synthesis. Remaining hits were: 2 already-recorded background reviews (Castañeda 2024, Williams 2023); 1 single-case conference abstract (Kaiga et al., rituximab in refractory IgAV, JASN abstract — excluded, no full-text found); the same Trivioli rituximab abstract already logged as excluded in Run 14; and several off-topic rituximab studies in childhood nephrotic syndrome and ANCA-associated vasculitis (distinct diseases from IgAN/IgAV — excluded as out of scope).
+
+## Run 16
+
+- **Date:** 2026-09-13
+- **Query:** "galactose-deficient IgA1 biomarker pathogenesis IgA nephropathy mucosal immunity gut-kidney axis" (with a follow-up on "IgA nephropathy gut microbiome TLR4 MyD88..." and "Lactobacillus casei cell wall extract..." to verify specific hits)
+- **Tool/database:** Consensus (primary), PubMed (verification)
+- **Filters:** year_min=2022, exclude_preprints=true, medical_mode=true
+- **Results returned:** 10
+- **New candidates recorded:** 3 verified (Zachova 2022 JASN — Gd-IgA1+ B cell lambda-light-chain/mucosal-homing study; Zhu 2024 NDT — gut microbiome/TLR4 mechanistic study with human+murine data; Li 2024/2025 JASN — novel humanized IGHA1 mouse model)
+- **Notes:** Rich mechanism/pathogenesis/biomarker sub-topic yield for IgAN (mucosal immunity, gut-kidney axis, Gd-IgA1 origin). Several additional strong candidates identified but not yet recorded due to session scope/time: Wu et al. 2026 Kidney Int and Wu et al. 2025 JASN (two related C1GALT1-knockout mouse studies challenging the causal sufficiency of Gd-IgA1 for glomerular deposition — an important emerging counter-narrative to the "four-hit" model), Gentile et al. 2024 KI Reports (unconventional T cells/B cell subsets), and Seikrit et al. 2026 Kidney Int commentary on IgA2 as a co-pathogenic driver (commentary, would be background-only). These remain candidate leads not yet verified/recorded — flagged for a follow-up literature-scout batch if the orchestrator wants deeper mechanism-subtopic coverage; NOT dropped silently, logged here. Two already-recorded background reviews (Cheung 2024 Nat Rev Nephrol) resurfaced; a companion 2026 Kidney Int Supplements overview by the same author group was also seen but not recorded (redundant with the already-captured Cheung 2024 review for background purposes).
